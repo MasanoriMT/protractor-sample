@@ -2,13 +2,14 @@
 
 ##サンプルの実行手順
 
-※前提：パッケージマネージャとしてnpmとbowerを利用
-
 1. npm install
+1. npm run update-webdriver
 1. bower install
 1. grunt
 1. grunt protractor
 
+※パッケージマネージャとしてnpmとbowerを利用する
+※grunt-cliのインストールも必要
 
 ##webdriver-manager updateがうまくいかない場合
 
