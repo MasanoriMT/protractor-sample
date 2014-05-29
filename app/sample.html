@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="sampleApp">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+
+    <h4>Angular Sample</h4>
+
+    <div class="container" ng-controller="SampleCtrl">
+        <input type="text" ng-model="inputText">
+        <br/>
+        <div>{{displayText}}</div>
+        <br/>
+        <button ng-click="toUpper()">push</button>
+    </div>
+</body>
+</html>

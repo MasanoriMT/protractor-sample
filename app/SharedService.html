@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" ng-app="AngularJsStudy">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/share.js"></script>
+</head>
+<body>
+
+    <h4>Shared State Service</h4>
+    <div class="container ng-cloak" ng-controller="ShareControllerA">
+        <h5>This is ShareControllerA</h5>
+        <input type="text" class="form-control" ng-model="data.text">
+        <p>{{data.text}}</p>
+    </div>
+    <div class="container ng-cloak" ng-controller="ShareControllerB">
+        <h5>This is ShareControllerB</h5>
+        <input type="text" class="form-control" ng-model="data.text">
+    </div>
+
+</body>
+</html>

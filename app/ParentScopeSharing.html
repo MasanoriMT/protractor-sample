@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="AngularJsStudy">
+<head>
+  <meta charset="utf-8">
+  <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/share.js"></script>
+</head>
+<body>
+
+    <h4>Parent Scope Sharing</h4>
+    <div class="container ng-cloak" ng-controller="MasterController">
+        <h5>Master Controller</h5>
+        <input type="text" class="form-control" ng-model="text">
+        <hr/>
+        <div class="container" ng-controller="ChildControllerA">
+            <h5>Child Controller A</h5>
+            <input type="text" class="form-control" ng-model="$parent.text">
+        </div>
+        <hr/>
+        <div class="container" ng-controller="ChildControllerB">
+            <h5>Child Controller B</h5>
+            <input type="text" class="form-control" ng-model="$parent.text">
+        </div>
+    </div>
+
+</body>
+</html>
