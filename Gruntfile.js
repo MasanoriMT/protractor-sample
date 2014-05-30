@@ -28,8 +28,8 @@ module.exports = function (grunt) {
             },
 
             start: {
-                // nodeコマンドを経由しても実行できるはずなのだが、うまくいかなかった。。。
-                command: "node ./node_modules/protractor/bin/webdriver-manager start",
+                // protractor/bin配下のwebdriver-managerではなく、以下のスクリプトを経由する
+                command: "./node_modules/.bin/webdriver-manager start",
                 options: {
                     //async: true,
                     callback: log

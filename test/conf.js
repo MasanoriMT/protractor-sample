@@ -3,6 +3,7 @@ exports.config = {
     seleniumAddress: "http://localhost:4444/wd/hub",
 
     // ieは激重 → IEDriverの問題としてレポートされている
+    // 'safari'もいける（ChromeやIEのようにDriverが別途必要になることもない）
     multiCapabilities: [{
       'browserName': 'firefox'
     }, {
